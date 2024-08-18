@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 100px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    gap: 22px;
+    padding: 0 30px;
+}
+
+.hero1 {
+    height: calc(100% - 100px);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 24px 16px 8px;
+    gap: 25px;
+
+}
+
+.hero1> :first-child {
+    font-size: 18px;
+    font-family: sans-serif;
+
+}
+
+.hero1-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation {
+    height: 6px;
+    background-color: rgb(55, 55, 55);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(23, 23, 23, 0.5);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 5px 26px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 1px solid rgba(23, 23, 23, 0.5);
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.first-second span{
+    float: right;
+    right: 15%;
+}
+.secImg1{
+    float: left;
+    width: 301px;
+}
+.secImg {
+    z-index: 10;
+    position: relative;
+
+}
+
+.secImg img {
+    position: relative;
+    z-index: 10;
+    float: right;
+    /* margin-top: 20px;*/
+    width: 301px;
+    height: auto;
+    top: 15%;
+    right: -30px;
+}
+
+.secImg video {
+    /*position: relative;
+    width: 55%; /* Or a specific width if needed 
+   /* max-width: 800px;  Example max width 
+    margin: 0 auto; /* Center the container 
+    float: right;
+    height: auto;
+    z-index: 10;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 10%;
+    left: 12%;
+    object-fit: cover;
+    width: 290px;
+    /* Adjust size as needed */
+    height: auto;
+    z-index: 2;
+    /* Ensure the video is on top of the image */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    /* Optional: shadow for emphasis */
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 17px;
+
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox:hover {
+    background-color: rgb(163, 160, 160);
+    color: white;
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 22px;
+    display: flex;
+    background-color: rgb(60, 59, 59);
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 5px;
+}
+
+footer {
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+    padding: 14px;
+}
+
+footer .Questions {
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item {
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
